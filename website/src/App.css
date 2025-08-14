@@ -1,0 +1,84 @@
+/* General App Layout */
+.App {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px;
+  gap: 20px;
+}
+
+/* Filter Panel */
+.filter-panel {
+  width: 250px;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group h4 {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 5px;
+}
+
+.filter-options {
+  max-height: 200px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checkbox-container label {
+  margin-left: 8px;
+  font-size: 14px;
+}
+
+/* Data Table */
+.data-table {
+  flex-grow: 1;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.data-table th, .data-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.data-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #f2f2f2;
+  cursor: pointer;
+}
+
+.data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-table tr:hover {
+  background-color: #ddd;
+}
